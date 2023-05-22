@@ -7,6 +7,7 @@
   --accent-color: #4d5ae5;
   --button-hover: #404bbf;
   --white-color: #ffffff;
+  --icon-bg: #f4f4fd;
 }
 
 /*! Main */
@@ -143,6 +144,20 @@ img {
   background-color: var(--dark-background);
 }
 
+.overlay {
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-title {
   margin-bottom: 48px;
   max-width: 496px;
@@ -209,12 +224,36 @@ img {
 
 .advant-undertitle {
   margin-bottom: 8px;
+  margin-top: 8px;
 
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--title-color);
+}
+
+/*? ICONS */
+
+.advant-item::before {
+  content: "";
+  height: 112px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--icon-bg);
+}
+.antenna-icon::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+.clock-icon::before {
+  background-image: url(../images/icons/clock.svg);
+}
+.diagram-icon::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+.astronaut-icon::before {
+  background-image: url(../images/icons/astronaut.svg);
 }
 
 /* Section WhatAreWeDoing, 
