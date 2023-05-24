@@ -235,25 +235,12 @@ img {
 
 /*? ICONS */
 
-.advant-item::before {
-  content: "";
+.advant-item .thumb {
   height: 112px;
-  display: block;
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: var(--icon-bg);
-}
-.antenna-icon::before {
-  background-image: url(../images/icons/antenna.svg);
-}
-.clock-icon::before {
-  background-image: url(../images/icons/clock.svg);
-}
-.diagram-icon::before {
-  background-image: url(../images/icons/diagram.svg);
-}
-.astronaut-icon::before {
-  background-image: url(../images/icons/astronaut.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Section WhatAreWeDoing, 
