@@ -8,6 +8,8 @@
   --button-hover: #404bbf;
   --white-color: #ffffff;
   --icon-bg: #f4f4fd;
+  --footer-hover: #31d0aa;
+  --customers-logo: #8e8f99;
 }
 
 /*! Main */
@@ -309,22 +311,34 @@ Section Team*/
 .team-sotialmedia {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
 .team-sotialmedia-item {
   width: 40px;
   height: 40px;
+}
+
+.team-sm-link {
+  width: 100%;
+  height: 100%;
   background-color: var(--accent-color);
   border-radius: 50px;
-  padding: 12px;
+  /* padding: 12px; */
+  color: var(--icon-bg);
 
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .sotial-icon {
-  width: 100%;
-  height: 100%;
+  fill: currentColor;
+}
+
+.team-sm-link:is(:hover, :focus) {
+  background-color: var(--button-hover);
 }
 
 /* Section Customers */
@@ -343,17 +357,28 @@ Section Team*/
 .customers-item {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--customers-logo);
   border-radius: 4px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
+  color: var(--customers-logo);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .customers-logo {
-  width: 100%;
-  height: 100%;
+  fill: currentColor;
+}
+
+.customers-link:is(:hover, :focus) {
+  border-color: var(--button-hover);
+  color: var(--button-hover);
 }
 
 /* Footer */
@@ -378,19 +403,22 @@ Section Team*/
 
 .footer-container {
   display: flex;
-  gap: 120px;
+}
+
+.logo-container {
+  margin-right: 120px;
 }
 
 .sm-title {
   margin-bottom: 16px;
-  display: inline-block;
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color);
 }
+
 .sm-list {
   display: flex;
   align-items: center;
@@ -400,16 +428,28 @@ Section Team*/
 .sm-item {
   width: 40px;
   height: 40px;
-  padding: 8px;
+  /* padding: 8px; */
+}
+
+.sm-link {
+  width: 100%;
+  height: 100%;
   background-color: var(--accent-color);
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--icon-bg);
 }
 
 .sm-icon {
-  width: 100%;
-  height: 100%;
+  fill: currentColor;
 }
 
+.sm-link:is(:hover, :focus) {
+  background-color: var(--footer-hover);
+}
 /*! Portfolio page */
 
 .button {
